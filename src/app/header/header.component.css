@@ -1,0 +1,41 @@
+.header-container{
+    font-family: 'Lato-Regular'
+}
+.top-section {  
+    padding: 1%;
+    text-align: center;
+    color: rgba(165, 47, 66, 0.93);
+    padding-bottom: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+.top-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 12%;
+    margin-left: 12%;
+}
+
+.nav-buttons{
+    padding: 1%;
+    min-width: 10%;
+}
+
+.nav-buttons:hover{
+    background-color: #58453F;
+    color: white;
+    transition: all 0.2s;
+}
+.carousel-banner {
+    width: 100%;
+}
+
+.carousel-image { 
+    width: 100%;
+    background-size: cover !important;
+    height: 70vh;
+}

@@ -1,0 +1,25 @@
+<div class="header-container">
+  <div class="top-section">
+    <h1 class="hotel-name">Hotel Vaishavi Heights</h1>
+    <ul class="top-nav"> 
+      <div class="nav-buttons" *ngFor="let item of navItems">
+        <li >{{item}}</li>
+      </div>
+      
+    </ul>
+  </div>
+  
+
+  <ngx-carousel 
+    class="carousel-banner"  
+    [inputs]="carouselConfig"
+    (carouselLoad)="carouselOnLoad($event)">
+    <ngx-item *ngFor="let image of carouselImages" NgxCarouselItem>
+      <div class="carousel-image" [ngStyle]="{ 'background' : 'url(' + image + ')' }">
+        <h1 style="opacity:0">Hotel Vaishnavi Heights</h1>
+      </div>
+    </ngx-item>
+    <button NgxCarouselPrev class='leftRs'></button>
+    <button NgxCarouselNext class='rightRs'></button>
+  </ngx-carousel>
+</div>
