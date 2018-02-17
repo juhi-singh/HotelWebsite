@@ -1,0 +1,15 @@
+<div class="booking-container theme-bg">
+    <mat-form-field>
+      <input matInput [matDatepicker]="checkin" placeholder="Check-in Date">
+      <mat-datepicker-toggle matSuffix [for]="checkin"></mat-datepicker-toggle>
+      <mat-datepicker #checkin></mat-datepicker>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput [matDatepicker]="checkout" placeholder="Check-out Date">
+      <mat-datepicker-toggle matSuffix [for]="checkout"></mat-datepicker-toggle>
+      <mat-datepicker #checkout></mat-datepicker>
+    </mat-form-field>
+    <div class="button-container">
+        <button class="avail-button"mat-raised-button>Check Availability</button>
+    </div>
+</div>
