@@ -4,6 +4,8 @@ import { AppRoutingModule } from './app.routes';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FlexLayoutModule } from '@angular/flex-layout';
+
 import { HttpModule } from '@angular/http';
 
 import { NgxCarouselModule } from 'ngx-carousel';
@@ -37,6 +39,7 @@ import { BookingComponent } from './booking/booking.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    FlexLayoutModule,
     NgxCarouselModule,
     MatFormFieldModule,
     MatInputModule,

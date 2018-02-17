@@ -1,25 +1,24 @@
 <div class="header-container">
   <div class="top-section">
-    <h1 class="hotel-name">Hotel Vaishavi Heights</h1>
+    <h2 class="hotel-name">Hotel Vaishavi Heights</h2>
     <ul class="top-nav"> 
-      <div class="nav-buttons" *ngFor="let items of navItems">
-        <li [routerLink]="items.link">{{items.item}}</li>
+      <div [routerLink]="items.link" class="nav-buttons" *ngFor="let items of navItems">
+        <li >{{items.item}}</li>
       </div>
     </ul>
   </div>
-  
-  <ngx-carousel 
-    class="carousel-banner"  
-    [inputs]="carouselConfig"
-    (carouselLoad)="carouselOnLoad($event)">
-    <ngx-item *ngFor="let image of carouselImages" NgxCarouselItem>
-      <div class="carousel-image" [ngStyle]="{ 'background' : 'url(' + image + ')' }">
-        <h1 style="opacity:0">Hotel Vaishnavi Heights</h1>
-      </div>
-    </ngx-item>
-    <button NgxCarouselPrev class='leftRs' style="opacity:0"></button>
-    <button NgxCarouselNext class='rightRs' style="opacity:0"></button>
-  </ngx-carousel>
+  <div *ngIf="_router.url != '/gallery' "class="carousel">
+    <ngx-carousel [inputs]="carouselConfig">
+      <ngx-item *ngFor="let item of carouselImages" NgxCarouselItem>
+        <div  id="carousel-img-container">
+          <img style="width: 100% !important" [src]="item">
+        </div>
+      </ngx-item>
+      <button NgxCarouselPrev class="leftRs">&lt;</button>
+      <button NgxCarouselNext class="rightRs">&gt;</button>
+    </ngx-carousel>
+  </div>
+  <div class="booking-container">
+    <app-booking></app-booking>
+  </div>
 </div>
-
-<app-booking></app-booking>

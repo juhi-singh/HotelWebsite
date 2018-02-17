@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { NgxCarousel } from 'ngx-carousel';
+import { Router } from '@angular/router';
 
-export interface navService{
+export interface NavService {
   item: String;
   link: String;
- 
 }
 
 
@@ -15,40 +15,32 @@ export interface navService{
 })
 export class HeaderComponent implements OnInit {
 
-  private carouselConfig: NgxCarousel;
   private carouselImages: Array<String>;
-  private navItems: Array<navService>;
+  private navItems: Array<NavService>;
+  private carouselConfig: NgxCarousel;
 
-  constructor() {
+  constructor( private _router: Router) {
     this.navItems = [
-    {item :'HOME' ,link:'/home'},
-    {item :'ABOUT US' ,link:'/home'},
-    {item :'ACCOMODATION' ,link:''},
-    {item :'DINING' ,link:''},
-    {item :'GALLARY' ,link:'/gallary'},
-    {item :'CONTACT US' ,link:''}
+    { item : 'HOME', link: '/home' },
+    { item : 'ABOUT US', link: '/home' },
+    { item : 'ACCOMODATION', link: '' },
+    { item : 'DINING', link: '' },
+    { item : 'GALLERY', link: '/gallery' },
+    { item : 'CONTACT US', link: '' }
     ];
    }
 
   ngOnInit() {
-    this.initImageObject();
-    this.initializeCarousel();
-
+    console.log(this._router.url, 'here');
+    this.initCarouselObjects();
   }
 
-  private initImageObject = () => {
+  private initCarouselObjects = () => {
     this.carouselImages = [
       '../../assets/images/hotelFront.jpg',
       '/assets/images/hotelReception.jpg',
       '/assets/images/hotelLobby.jpg',
     ];
-  }
-
-  private carouselOnLoad = () => {
-    // TODO: Decide whats going to come here !
-  }
-
-  private initializeCarousel = () => {
     this.carouselConfig = {
       grid: {xs: 1, sm: 1, md: 1, lg: 1, all: 0},
       slide: 1,
@@ -57,11 +49,13 @@ export class HeaderComponent implements OnInit {
       point: {
         visible: false
       },
-      load: 2,
-      touch: true,
       loop: true,
-      custom: 'banner'
+      touch: true
     };
+  }
+
+  private carouselOnLoad = () => {
+    // TODO: Decide whats going to come here !
   }
 
 }

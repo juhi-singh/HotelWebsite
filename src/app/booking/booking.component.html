@@ -1,15 +1,29 @@
-<div class="booking-container theme-bg">
+<div fxFlex="100%" fxFlexAlign="center" fxLayoutWrap fxLayoutGap="25px" fxLayoutGap.sm="10px" fxLayout="row" class="booking-container bg-transparent">
+  <div>
     <mat-form-field>
-      <input matInput [matDatepicker]="checkin" placeholder="Check-in Date">
-      <mat-datepicker-toggle matSuffix [for]="checkin"></mat-datepicker-toggle>
-      <mat-datepicker #checkin></mat-datepicker>
+        <input matInput [matDatepicker]="checkin" placeholder="Check-in Date">
+        <mat-datepicker-toggle matSuffix [for]="checkin"></mat-datepicker-toggle>
+        <mat-datepicker #checkin></mat-datepicker>
     </mat-form-field>
+  </div>
+  <div>
     <mat-form-field>
-      <input matInput [matDatepicker]="checkout" placeholder="Check-out Date">
-      <mat-datepicker-toggle matSuffix [for]="checkout"></mat-datepicker-toggle>
-      <mat-datepicker #checkout></mat-datepicker>
+        <input matInput [matDatepicker]="checkout" placeholder="Check-out Date">
+        <mat-datepicker-toggle matSuffix [for]="checkout"></mat-datepicker-toggle>
+        <mat-datepicker #checkout></mat-datepicker>
+      </mat-form-field>
+  </div>
+  <div>
+    <mat-form-field>
+      <input type="number" matInput placeholder="Adults">
     </mat-form-field>
-    <div class="button-container">
-        <button class="avail-button"mat-raised-button>Check Availability</button>
-    </div>
+  </div>
+  <div>
+    <mat-form-field>
+      <input type="number" matInput placeholder="Rooms">
+    </mat-form-field>
+  </div>
+  <div>
+    <button class="avail-button"mat-raised-button>Check Availability</button>
+  </div>
 </div>

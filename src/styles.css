@@ -26,8 +26,16 @@
     src: url('assets/fonts/Lato-Italic.ttf'); /* IE9 Compat Modes */
 }
 
+body{
+    margin: 0px;
+}
+
 .theme-bg{
     background: rgba(165, 47, 66, 0.93);
+}
+
+.bg-transparent {
+    background: rgba(165, 47, 66, 0.5);
 }
 
 .mat-input-container label {
