@@ -1,0 +1,23 @@
+.booking-container{
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        color: white;
+        font-size: 0.8rem;
+        align-content: center;
+        vertical-align: middle;
+        padding: 0.5% 20%;
+        margin-top: -30px;
+}
+
+.button-container{
+    margin-top: 1%;
+    
+}
+
+.avail-button{
+    color: black;
+    font-size: 0.8 rem;
+    font-family: 'Lato-Regular';
+}

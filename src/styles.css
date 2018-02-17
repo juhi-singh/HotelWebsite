@@ -1,4 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 @font-face {
     font-family: 'Lato-Regular';
     src: url('assets/fonts/Lato-Regular.ttf'); /* IE9 Compat Modes */
@@ -23,4 +24,25 @@
 @font-face {
     font-family: 'Lato-Italic';
     src: url('assets/fonts/Lato-Italic.ttf'); /* IE9 Compat Modes */
+}
+
+.theme-bg{
+    background: rgba(165, 47, 66, 0.93);
+}
+
+.mat-input-container label {
+    color: white; 
+    font-family: 'Lato-Regular';
+}
+
+.mat-form-field {
+    font-family: 'Lato-Regular';
+}
+
+.mat-form-field-underline{
+    background-color: white;
+}
+
+.mat-input-elemnt {
+    caret-color:  #f1f1f1 !important; 
 }
