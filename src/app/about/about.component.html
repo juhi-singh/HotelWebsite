@@ -9,6 +9,17 @@
           participation in both our present and our future. We aim to offer you comfortable surroundings, great food and excellent service to make 
           your stay truly enjoyable. Please take a look through our web site where you will find most need. 
            We deliver best service with royal and Luxurious touch on an economical value.
-          We believe in <b>“Attithi Devo Bhav”</b> for us our guest are our god. Give us a chance to serve you beyond your expectations.</p>
+          We believe in <b>“Attithi Devo Bhav”</b> for us our guest are our god. Give us a chance to serve you beyond your expectations.</p><hr>
   </div>
+  <div class="services">
+      <h1>Our Services</h1>
+      <div *ngFor = "let service of serviceList; let i = index " class="services-image">
+        <img *ngIf="i%2 === 0" src="{{service.image}}">
+        <div class="desc">
+            <h3>{{service.heading}}</h3>
+            <p>{{service.description}}</p>
+        </div>
+        <img *ngIf="i%2 !==0 " src="{{service.image}}">
+      </div>
+ </div>
 </div>
