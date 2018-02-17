@@ -19,11 +19,11 @@ export class AboutComponent implements OnInit {
 
   constructor() {
     this.serviceList = [
-      {image :'/assets/images/hotelLobby.jpg' ,description :'Vaishnavi Heights has iconic building with gracious interiors invoking an inviting, exciting ambiance and offering a holistic' ,
+      {image :'/assets/images/hotelLobby.jpg' ,description :'Vaishnavi Heights has iconic building with gracious interiors invoking an inviting, exciting ambiance and offering a holistic Vaishnavi Heights has iconic building with gracious interiors invoking an inviting, exciting ambiance and offering a holistic Vaishnavi Heights has iconic building with gracious interiors invoking an inviting, exciting ambiance and offering a holistic Vaishnavi Heights has iconic building with gracious interiors invoking an inviting, exciting ambiance and offering a holistic' ,
        heading: 'Rooms'},
-      {image :'/assets/images/conferenceRoom.jpg' ,description :'Vaishnavi Heights has iconic building with gracious interiors invoking an inviting, exciting ambiance and offering a holistic' ,
+      {image :'/assets/images/conferenceRoom.jpg' ,description :'Vaishnavi Heights has iconic building with gracious interiors invoking an inviting, exciting ambiance and offering a holistic Vaishnavi Heights has iconic building with gracious interiors invoking an inviting, exciting ambiance and offering a holistic Vaishnavi Heights has iconic building with gracious interiors invoking an inviting, exciting ambiance and offering a holistic Vaishnavi Heights has iconic building with gracious interiors invoking an inviting, exciting ambiance and offering a holistic' ,
       heading: 'Confrence & Banquet Hall'},
-      {image :'/assets/images/resturant.jpg' ,description :'Vaishnavi Heights has iconic building with gracious interiors invoking an inviting, exciting ambiance and offering a holistic' ,
+      {image :'/assets/images/resturant.jpg' ,description :'Vaishnavi Heights has iconic building with gracious interiors invoking an inviting, exciting ambiance and offering a holistic Vaishnavi Heights has iconic building with gracious interiors invoking an inviting, exciting ambiance and offering a holistic Vaishnavi Heights has iconic building with gracious interiors invoking an inviting, exciting ambiance and offering a holistic Vaishnavi Heights has iconic building with gracious interiors invoking an inviting, exciting ambiance and offering a holistic' ,
       heading: 'Resturant'}
     ]
    }

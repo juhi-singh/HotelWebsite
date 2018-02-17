@@ -18,6 +18,9 @@
         <div class="desc">
             <h3>{{service.heading}}</h3>
             <p>{{service.description}}</p>
+            <div class="button-row">
+                <a mat-raised-button routerLink=".">More Details</a>
+            </div>
         </div>
         <img *ngIf="i%2 !==0 " src="{{service.image}}">
       </div>

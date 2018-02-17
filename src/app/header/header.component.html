@@ -2,8 +2,8 @@
   <div class="top-section">
     <h1 class="hotel-name">Hotel Vaishavi Heights</h1>
     <ul class="top-nav"> 
-      <div class="nav-buttons" *ngFor="let item of navItems">
-        <li >{{item}}</li>
+      <div class="nav-buttons" *ngFor="let items of navItems">
+        <li [routerLink]="items.link">{{items.item}}</li>
       </div>
     </ul>
   </div>
