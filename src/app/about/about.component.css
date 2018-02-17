@@ -1,0 +1,13 @@
+.about{
+    background-color: white;
+    font-family: 'Lato-Regular';
+}
+.description h1{
+    text-align: center;
+    color: rgba(165, 47, 66, 0.93);
+}
+.description{
+    margin: 5%;
+    padding: 3%;
+    color: black;
+}
