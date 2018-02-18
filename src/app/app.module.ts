@@ -41,6 +41,8 @@ import { BookingComponent } from './booking/booking.component';
     BrowserModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
+    FormsModule,
+    ReactiveFormsModule,
     NgxCarouselModule,
     MatFormFieldModule,
     MatInputModule,
