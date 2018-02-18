@@ -15,6 +15,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material';
+import {MatMenuModule} from '@angular/material/menu';
 import 'hammerjs';
 
 
@@ -45,6 +46,7 @@ import { BookingComponent } from './booking/booking.component';
     MatInputModule,
     MatButtonModule,
     AppRoutingModule,
+    MatMenuModule,
     MatDatepickerModule,
     MatNativeDateModule,
     AgmCoreModule.forRoot({

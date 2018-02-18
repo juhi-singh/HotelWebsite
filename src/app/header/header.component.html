@@ -1,11 +1,40 @@
 <div class="header-container">
   <div class="top-section">
     <h2 class="hotel-name">Hotel Vaishavi Heights</h2>
-    <ul class="top-nav"> 
-      <div [routerLink]="items.link" class="nav-buttons" *ngFor="let items of navItems">
-        <li >{{items.item}}</li>
+    <div class="top-nav"> 
+    <div [routerLink]="items.link" class="nav-buttons" *ngFor="let items of navItems">
+      <button mat-button [matMenuTriggerFor]="items.item">{{items.item}}</button>
+      <div *ngIf="items.hasMoreItems">
+          <mat-menu #items.item="matMenu">
+              <button  *ngFor="let firstitems of items.firstLevelItems" mat-menu-item>{{firstitems.item}}</button>
+          </mat-menu>
       </div>
-    </ul>
+    </div>
+    </div> 
+    
+
+    <!-- <div class="top-nav"> 
+      <button mat-button routerLink = "/home">HOME</button>
+      <button mat-button>ABOUT US</button>
+      <button mat-button [matMenuTriggerFor]="accomodation">ACCOMODATION</button>
+      <button mat-button [matMenuTriggerFor]="events">EVENTS</button>
+      <button mat-button>DINING</button>
+      <button mat-button routerLink = "/gallery">GALLERY</button>
+      <button mat-button>CONTACT US</button>
+      <mat-menu #accomodation="matMenu">
+          <button mat-menu-item>CLUB ROOM</button>
+          <button mat-menu-item>DULEX ROOM</button>
+          <button mat-menu-item>EXECUTIVE ROOM</button>
+          <button mat-menu-item>TAJ SUITS</button>
+          <button mat-menu-item>KOHINOOR SUITS</button>
+        </mat-menu>
+        <mat-menu #events="matMenu">
+            <button mat-menu-item>MEETINGS</button>
+            <button mat-menu-item>WEDDING</button>
+          </mat-menu>
+    </div> -->
+
+
   </div>
   <div *ngIf="_router.url != '/gallery' "class="carousel">
     <ngx-carousel [inputs]="carouselConfig">
