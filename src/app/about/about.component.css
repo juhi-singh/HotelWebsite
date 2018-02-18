@@ -26,7 +26,11 @@ h1{
 }
 .services-image{
     display:  flex;
-   
+    background-color: #e1e1e1;
+}
+
+.alternate-bg{
+    background-color: white;
 }
 .services-image img{
     width: 35%;
@@ -57,7 +61,7 @@ img:hover {
 
 .desc h3{
     text-align: center;
-    font-family: 'Lato-Italic';
+    font-family: 'Lato-Regular';
     color: black;
 }
 

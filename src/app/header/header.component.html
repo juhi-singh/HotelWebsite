@@ -1,19 +1,18 @@
 <div class="header-container">
   <div class="top-section">
     <h2 class="hotel-name">Hotel Vaishavi Heights</h2>
-    <div class="top-nav"> 
-    <div [routerLink]="items.link" class="nav-buttons" *ngFor="let items of navItems">
-      <button mat-button [matMenuTriggerFor]="items.item">{{items.item}}</button>
-      <div *ngIf="items.hasMoreItems">
-          <mat-menu #items.item="matMenu">
-              <button  *ngFor="let firstitems of items.firstLevelItems" mat-menu-item>{{firstitems.item}}</button>
-          </mat-menu>
-      </div>
-    </div>
-    </div> 
+    <!-- <div class="top-nav">  -->
+    <!-- <div class="nav-buttons" >
+      <button *ngFor="let items of navItems"  mat-button>{{items.item}}</button> -->
+      <!-- <mat-menu #accomodation="matMenu">
+          <button mat-menu-item *ngFor="let firstItems of items.firstLevelItems "></button>
+      </mat-menu> -->
+    <!-- </div> -->
+   
+    <!-- </div>  -->
     
 
-    <!-- <div class="top-nav"> 
+    <div fxHide.xs fxHide.sm class="top-nav"> 
       <button mat-button routerLink = "/home">HOME</button>
       <button mat-button>ABOUT US</button>
       <button mat-button [matMenuTriggerFor]="accomodation">ACCOMODATION</button>
@@ -32,7 +31,7 @@
             <button mat-menu-item>MEETINGS</button>
             <button mat-menu-item>WEDDING</button>
           </mat-menu>
-    </div> -->
+    </div>
 
 
   </div>

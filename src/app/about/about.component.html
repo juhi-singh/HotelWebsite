@@ -13,7 +13,7 @@
   </div>
   <div class="services">
       <h1>Our Services</h1>
-      <div *ngFor = "let service of serviceList; let i = index " class="services-image">
+      <div [ngClass]="{'alternate-bg': i%2 != 0}" *ngFor = "let service of serviceList; let i = index " class="services-image">
         <img *ngIf="i%2 === 0" src="{{service.image}}">
         <div class="desc">
             <h3>{{service.heading}}</h3>
