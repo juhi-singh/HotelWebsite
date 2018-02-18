@@ -54,3 +54,11 @@ body{
 .mat-input-elemnt {
     caret-color:  #f1f1f1 !important; 
 }
+
+.mat-button{
+    font-size: 0.9rem;
+}
+
+.mat-menu-item{
+    font-size: 0.8rem;
+}

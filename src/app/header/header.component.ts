@@ -6,8 +6,9 @@ import { Router } from '@angular/router';
 export interface NavService {
   item: String;
   link: String;
-  hasMoreItems? : Boolean;
-  firstLevelItems? : Array<NavService>;
+  selector?: String;
+  hasMoreItems?: Boolean;
+  firstLevelItems?: Array<NavService>;
 }
 
 
@@ -26,7 +27,7 @@ export class HeaderComponent implements OnInit {
     this.navItems = [
     { item : 'HOME', link: '/home' },
     { item : 'ABOUT US', link: '/home' },
-    { item : 'ACCOMODATION', link: '',  hasMoreItems: true ,  
+    { item : 'ACCOMODATION', link: '',  hasMoreItems: true ,  selector: 'accomodation',
       firstLevelItems: [
         {
           item: 'CLUB ROOMS',
