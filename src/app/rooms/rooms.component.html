@@ -1,0 +1,15 @@
+<div class="services">
+
+  <div [ngClass]="{'alternate-bg': i%2 != 0}" *ngFor = "let room of roomLists; let i = index " class="services-image">
+    <img *ngIf="i%2 === 0" src="{{room.image}}">
+    <div class="desc">
+        <h3>{{room.heading}}</h3>
+        <p>{{room.price}}</p>
+        <div class="button-row">
+            <a mat-raised-button>BOOK NOW</a>
+        </div>
+    </div>
+    <img *ngIf="i%2 !==0 " src="{{room.image}}">
+  </div>
+</div>
+

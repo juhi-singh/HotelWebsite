@@ -5,6 +5,7 @@ export interface services{
   image: String;
   description: String;
   heading :String;
+  link: String;
 }
 
 
@@ -20,11 +21,11 @@ export class AboutComponent implements OnInit {
   constructor() {
     this.serviceList = [
       {image :'/assets/images/hotelLobby.jpg' ,description :'Vaishnavi Heights has iconic building with gracious interiors invoking an inviting, exciting ambiance and offering a holistic Vaishnavi Heights has iconic building with gracious interiors invoking an inviting, exciting ambiance and offering a holistic Vaishnavi Heights has iconic building with gracious interiors invoking an inviting, exciting ambiance and offering a holistic Vaishnavi Heights has iconic building with gracious interiors invoking an inviting, exciting ambiance and offering a holistic' ,
-       heading: 'Rooms'},
+       heading: 'Rooms & Suits' ,link:'/rooms'},
       {image :'/assets/images/conferenceRoom.jpg' ,description :'Vaishnavi Heights has iconic building with gracious interiors invoking an inviting, exciting ambiance and offering a holistic Vaishnavi Heights has iconic building with gracious interiors invoking an inviting, exciting ambiance and offering a holistic Vaishnavi Heights has iconic building with gracious interiors invoking an inviting, exciting ambiance and offering a holistic Vaishnavi Heights has iconic building with gracious interiors invoking an inviting, exciting ambiance and offering a holistic' ,
-      heading: 'Confrence & Banquet Hall'},
+      heading: 'Confrence & Banquet Hall', link:'/events'},
       {image :'/assets/images/resturant.jpg' ,description :'Vaishnavi Heights has iconic building with gracious interiors invoking an inviting, exciting ambiance and offering a holistic Vaishnavi Heights has iconic building with gracious interiors invoking an inviting, exciting ambiance and offering a holistic Vaishnavi Heights has iconic building with gracious interiors invoking an inviting, exciting ambiance and offering a holistic Vaishnavi Heights has iconic building with gracious interiors invoking an inviting, exciting ambiance and offering a holistic' ,
-      heading: 'Resturant'}
+      heading: 'Resturant' ,link:'/resturant'}
     ]
    }
 

@@ -1,0 +1,25 @@
+.gimage{
+    width: 29%;
+    height: 30%;
+    padding: 1%;
+    margin: 1%;
+    border-radius: 25px;
+}
+.gallery-image{
+    height: 150%;
+    background-color: rgba(252, 252, 197, 0.87);
+}
+
+img:hover {
+    opacity: 0.7;
+}
+
+
+
+ /* h1{
+    font-family: 'Lato-Regular';
+    padding: 1%;
+    text-align: center;
+    color: rgba(165, 47, 66, 0.93);
+    top: 20%;
+} */

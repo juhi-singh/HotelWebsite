@@ -1,3 +1,6 @@
-<p>
-  gallery works!
-</p>
+<div class="gallery">
+<!-- <h1> Our Gallery</h1> -->
+  <div fxFlex="100%" fxLayoutWrap class="gallery-image" >
+      <img *ngFor="let images of imageList" class="gimage" src="{{images.image}}">
+  </div>
+</div>

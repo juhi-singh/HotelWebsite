@@ -26,6 +26,9 @@ import { AboutComponent } from './about/about.component';
 import { GalleryComponent } from './gallery/gallery.component';
 
 import { BookingComponent } from './booking/booking.component';
+import { RoomsComponent } from './rooms/rooms.component';
+import { EventsComponent } from './events/events.component';
+import { ResturantComponent } from './resturant/resturant.component';
 
 
 @NgModule({
@@ -35,7 +38,10 @@ import { BookingComponent } from './booking/booking.component';
     HeaderComponent,
     AboutComponent,
     BookingComponent,
-    GalleryComponent
+    GalleryComponent,
+    RoomsComponent,
+    EventsComponent,
+    ResturantComponent
   ],
   imports: [
     BrowserModule,
